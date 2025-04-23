@@ -20,7 +20,7 @@ Dataset and trained models are available in Zenodo repository, https://doi.org/1
 
 *Steps to set up KSMoFinder --- ends ---*
 
-# To run assessments (1 thorugh 4)
+# To run assessments (1 thorugh 5)
 sh assess.sh <br>
 
 # KSMoFinder predictions
