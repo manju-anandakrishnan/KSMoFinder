@@ -27,7 +27,7 @@ def _by_kinase_families(test_df):
         test_df1 = test_data.copy()
         label_cnts = test_df1['label'].value_counts().to_dict()
         if (label_cnts.get(1) is None) or (label_cnts.get(0) is None): 
-            print(f"{key[0]}|{key[1]}|Skipped")
+            #print(f"{key[0]}|{key[1]}|Skipped")
             continue
         y_true = test_df1['label'].to_list()
         ksf_pred = test_df1['ksf_pred'].to_list()
@@ -55,7 +55,8 @@ def _by_kinase(test_df):
         unique_kinases = list(test_df1['head'].unique())
         print(f"{group}|{family}|(Positive: {label_cnts[1]}; Negative: {label_cnts[0]})|{','.join(unique_kinases)}|{roc_score}|{pr_score}")
     else:
-        print(",".join(skipped_kinases))
+        #print(",".join(skipped_kinases))
+        pass
 
 
 def _avg_by_kinase(test_df,min_positives=5):
@@ -138,8 +139,13 @@ if __name__ == '__main__':
     test_df['ksf_pred'] = predict(test_df)
     test_df.drop_duplicates(inplace=True)
 
-    # _by_kinase_groups(test_df)
-    # _by_kinase_families(test_df)
-    # _by_kinase(test_df)
-    # _avg_by_kinase(test_df)
+    print('********* By kinase group **********')
+    _by_kinase_groups(test_df)
+    print('********* By kinase family **********')
+    _by_kinase_families(test_df)
+    print('********* By kinases **********')
+    _by_kinase(test_df)
+    print('********* Averaged by kinases **********')
+    _avg_by_kinase(test_df)
+    print('********* Averaged by kinase families **********')
     _avg_by_family(test_df)

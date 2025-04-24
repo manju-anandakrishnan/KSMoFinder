@@ -170,6 +170,7 @@ if __name__ == '__main__':
     test_data_path_d1 = constants.CSV_CLF_TEST_D1_ASSESS2
     test_data_path_d2 = constants.CSV_CLF_TEST_D2_ASSESS2
 
+    # Without easy test scenarios
     if (args.test_data_path) and (args.test_data_path == 'ASSESS_2_2'):
         test_data_path_d1 = constants.CSV_CLF_TEST_D1_ASSESS2_2
         test_data_path_d2 = constants.CSV_CLF_TEST_D2_ASSESS2_2

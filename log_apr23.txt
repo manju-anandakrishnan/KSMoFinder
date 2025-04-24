@@ -1,0 +1,820 @@
+(Assessment1) Assessing models developed using different KGE algorithms
+Evaluating model with transE embeddings
+****Testing dataset 1 ****
+Testing data count:: 6874 | Positive data count:: 3437 | Negative data count:: 3437
+ROC Score: 0.895 PR Score: 0.891 CI (95%): {('0.895+/-0.0', '0.892+/-0.001')}
+****Testing dataset 2 ****
+Testing data count:: 16559 | Positive data count:: 3437 | Negative data count:: 13122
+ROC Score: 0.919 PR Score: 0.779 CI (95%): {('0.919+/-0.0', '0.779+/-0.001')}
+Evaluating model with distmult embeddings
+****Testing dataset 1 ****
+Testing data count:: 6874 | Positive data count:: 3437 | Negative data count:: 3437
+ROC Score: 0.824 PR Score: 0.788 CI (95%): {('0.824+/-0.001', '0.788+/-0.001')}
+****Testing dataset 2 ****
+Testing data count:: 16559 | Positive data count:: 3437 | Negative data count:: 13122
+ROC Score: 0.834 PR Score: 0.526 CI (95%): {('0.834+/-0.0', '0.526+/-0.001')}
+Evaluating model with complex embeddings
+****Testing dataset 1 ****
+Testing data count:: 6874 | Positive data count:: 3437 | Negative data count:: 3437
+ROC Score: 0.767 PR Score: 0.711 CI (95%): {('0.767+/-0.001', '0.711+/-0.001')}
+****Testing dataset 2 ****
+Testing data count:: 16559 | Positive data count:: 3437 | Negative data count:: 13122
+ROC Score: 0.803 PR Score: 0.487 CI (95%): {('0.803+/-0.0', '0.487+/-0.001')}
+Evaluating model with expressivE embeddings
+****Testing dataset 1 ****
+Testing data count:: 6874 | Positive data count:: 3437 | Negative data count:: 3437
+ROC Score: 0.521 PR Score: 0.5 CI (95%): {('0.522+/-0.001', '0.5+/-0.001')}
+****Testing dataset 2 ****
+Testing data count:: 16559 | Positive data count:: 3437 | Negative data count:: 13122
+ROC Score: 0.526 PR Score: 0.216 CI (95%): {('0.527+/-0.001', '0.217+/-0.0')}
+-----------------Assessment1 Ended---------------------
+(Assessment2) KSFinder 2.0 KGE vs models developed using embeddings from other models
+Evaluating model with embeddings from ESM2
+****Testing dataset 1 ****
+Testing data count:: 6050 | Positive data count:: 3025 | Negative data count:: 3025
+ROC Score: 0.692 PR Score: 0.658 CI (95%): {('0.692+/-0.001', '0.658+/-0.001')}
+****Testing dataset 2 ****
+Testing data count:: 11514 | Positive data count:: 3025 | Negative data count:: 8489
+ROC Score: 0.856 PR Score: 0.617 CI (95%): {('0.856+/-0.0', '0.617+/-0.001')}
+Evaluating model with embeddings from ESM3
+****Testing dataset 1 ****
+Testing data count:: 6050 | Positive data count:: 3025 | Negative data count:: 3025
+ROC Score: 0.502 PR Score: 0.501 CI (95%): {('0.502+/-0.0', '0.501+/-0.0')}
+****Testing dataset 2 ****
+Testing data count:: 11514 | Positive data count:: 3025 | Negative data count:: 8489
+ROC Score: 0.493 PR Score: 0.26 CI (95%): {('0.493+/-0.0', '0.26+/-0.0')}
+Evaluating model with embeddings from ProtT5
+****Testing dataset 1 ****
+Testing data count:: 6050 | Positive data count:: 3025 | Negative data count:: 3025
+ROC Score: 0.752 PR Score: 0.725 CI (95%): {('0.752+/-0.001', '0.725+/-0.001')}
+****Testing dataset 2 ****
+Testing data count:: 11514 | Positive data count:: 3025 | Negative data count:: 8489
+ROC Score: 0.872 PR Score: 0.67 CI (95%): {('0.872+/-0.0', '0.67+/-0.001')}
+Evaluating model with embeddings from KSFinder 2.0 KGE (transE)
+****Testing dataset 1 ****
+Testing data count:: 6050 | Positive data count:: 3025 | Negative data count:: 3025
+ROC Score: 0.832 PR Score: 0.823 CI (95%): {('0.832+/-0.001', '0.822+/-0.001')}
+****Testing dataset 2 ****
+Testing data count:: 11514 | Positive data count:: 3025 | Negative data count:: 8489
+ROC Score: 0.907 PR Score: 0.777 CI (95%): {('0.907+/-0.0', '0.777+/-0.001')}
+Evaluating model with embeddings from random generation
+****Testing dataset 1 ****
+Testing data count:: 6050 | Positive data count:: 3025 | Negative data count:: 3025
+ROC Score: 0.496 PR Score: 0.5 CI (95%): {('0.496+/-0.0', '0.5+/-0.0')}
+****Testing dataset 2 ****
+Testing data count:: 11514 | Positive data count:: 3025 | Negative data count:: 8489
+ROC Score: 0.497 PR Score: 0.263 CI (95%): {('0.497+/-0.0', '0.263+/-0.0')}
+Compare KSMoFinder-KGE with other embeddings after removing easy test scenarios (similar kinase-motif)
+Evaluating model with embeddings from ESM2
+****Testing dataset 1 ****
+Testing data count:: 4888 | Positive data count:: 2444 | Negative data count:: 2444
+ROC Score: 0.661 PR Score: 0.626 CI (95%): {('0.661+/-0.001', '0.627+/-0.001')}
+****Testing dataset 2 ****
+Testing data count:: 9684 | Positive data count:: 2444 | Negative data count:: 7240
+ROC Score: 0.836 PR Score: 0.561 CI (95%): {('0.836+/-0.0', '0.561+/-0.001')}
+Evaluating model with embeddings from ESM3
+****Testing dataset 1 ****
+Testing data count:: 4888 | Positive data count:: 2444 | Negative data count:: 2444
+ROC Score: 0.501 PR Score: 0.501 CI (95%): {('0.501+/-0.0', '0.501+/-0.0')}
+****Testing dataset 2 ****
+Testing data count:: 9684 | Positive data count:: 2444 | Negative data count:: 7240
+ROC Score: 0.494 PR Score: 0.25 CI (95%): {('0.494+/-0.0', '0.25+/-0.0')}
+Evaluating model with embeddings from ProtT5
+****Testing dataset 1 ****
+Testing data count:: 4888 | Positive data count:: 2444 | Negative data count:: 2444
+ROC Score: 0.718 PR Score: 0.689 CI (95%): {('0.718+/-0.001', '0.69+/-0.001')}
+****Testing dataset 2 ****
+Testing data count:: 9684 | Positive data count:: 2444 | Negative data count:: 7240
+ROC Score: 0.849 PR Score: 0.609 CI (95%): {('0.85+/-0.0', '0.609+/-0.001')}
+Evaluating model with embeddings from KSFinder 2.0 KGE (transE)
+****Testing dataset 1 ****
+Testing data count:: 4888 | Positive data count:: 2444 | Negative data count:: 2444
+ROC Score: 0.809 PR Score: 0.797 CI (95%): {('0.809+/-0.001', '0.797+/-0.001')}
+****Testing dataset 2 ****
+Testing data count:: 9684 | Positive data count:: 2444 | Negative data count:: 7240
+ROC Score: 0.892 PR Score: 0.735 CI (95%): {('0.892+/-0.0', '0.736+/-0.001')}
+-----------------Assessment2 Ended---------------------
+(Assessment3) Influence of embeddings from models - Phosformer and ProstT5
+Evaluating model ProsT5 (structure) and Phosformer (domain sequence & motif)
+Testing data count:: 6680 | Positive data count:: 3340 | Negative data count:: 3340
+ROC Score: 0.724 PR Score: 0.652 CI (95%): {('0.724+/-0.001', '0.652+/-0.001')}
+Testing data count:: 15447 | Positive data count:: 3340 | Negative data count:: 12107
+ROC Score: 0.802 PR Score: 0.422 CI (95%): {('0.802+/-0.0', '0.422+/-0.0')}
+Evaluating model with KSFinder 2.0 embeddings (function and motif) and ProsT5 (structure)
+Testing data count:: 6680 | Positive data count:: 3340 | Negative data count:: 3340
+ROC Score: 0.901 PR Score: 0.895 CI (95%): {('0.901+/-0.0', '0.895+/-0.001')}
+Testing data count:: 15447 | Positive data count:: 3340 | Negative data count:: 12107
+ROC Score: 0.924 PR Score: 0.783 CI (95%): {('0.924+/-0.0', '0.783+/-0.001')}
+Evaluating model with KSFinder 2.0 embeddings (function and motif) and Phosformer (domain sequence & motif)
+Testing data count:: 6680 | Positive data count:: 3340 | Negative data count:: 3340
+ROC Score: 0.882 PR Score: 0.878 CI (95%): {('0.882+/-0.001', '0.879+/-0.001')}
+Testing data count:: 15447 | Positive data count:: 3340 | Negative data count:: 12107
+ROC Score: 0.912 PR Score: 0.761 CI (95%): {('0.912+/-0.0', '0.761+/-0.001')}
+Evaluating model with KSFinder 2.0 embeddings (function and motif), ProstT5(structure) and Phosformer (domain sequence & motif)
+Testing data count:: 6680 | Positive data count:: 3340 | Negative data count:: 3340
+ROC Score: 0.904 PR Score: 0.902 CI (95%): {('0.904+/-0.0', '0.902+/-0.001')}
+Testing data count:: 15447 | Positive data count:: 3340 | Negative data count:: 12107
+ROC Score: 0.927 PR Score: 0.8 CI (95%): {('0.927+/-0.0', '0.8+/-0.001')}
+Evaluating model with KSFinder 2.0 embeddings only (function and motif)
+Testing data count:: 6680 | Positive data count:: 3340 | Negative data count:: 3340
+ROC Score: 0.892 PR Score: 0.89 CI (95%): {('0.892+/-0.0', '0.891+/-0.001')}
+Testing data count:: 15447 | Positive data count:: 3340 | Negative data count:: 12107
+ROC Score: 0.918 PR Score: 0.785 CI (95%): {('0.918+/-0.0', '0.785+/-0.001')}
+Evaluating model with KSFinder 2.0 embeddings (function and motif), ProstT5 (structure)
+Traceback (most recent call last):
+  File "/data/home/manjua/github_manjua/KSMoFinder/assessments/assessment3/w_prostT5_ksf2_motif_only/nn_classifier.py", line 227, in <module>
+    model = torch.jit.load(model_path)
+  File "/home/manjua/miniconda3/envs/ksf2/lib/python3.9/site-packages/torch/jit/_serialization.py", line 152, in load
+    raise ValueError("The provided filename {} does not exist".format(f))  # type: ignore[str-bytes-safe]
+ValueError: The provided filename assessments/assessment3/model_struct_motif.pt does not exist
+-----------------Assessment3 Ended---------------------
+(Assessment4) Comparative evaluation of KSFinder 2.0 with other kinase-substrate tools
+Comparing KSFinder 2.0 and Phosformer-ST (subassessment 1)
+cuda
+18127
+Traceback (most recent call last):
+  File "/data/home/manjua/github_manjua/KSMoFinder/assessments/assessment4/phosformer-ST/compare_subassess1.py", line 43, in <module>
+    tr_pos_data_km = load_data()
+  File "/data/home/manjua/github_manjua/KSMoFinder/assessments/assessment4/phosformer-ST/compare_subassess1.py", line 32, in load_data
+    with open('data/phosphorylation_km_pairs.txt') as ip_f:
+FileNotFoundError: [Errno 2] No such file or directory: 'data/phosphorylation_km_pairs.txt'
+Comparing KSFinder 2.0 and Phosformer-ST (subassessment 2)
+cuda
+18127
+Traceback (most recent call last):
+  File "/data/home/manjua/github_manjua/KSMoFinder/assessments/assessment4/phosformer-ST/compare_subassess2.py", line 42, in <module>
+    tr_pos_data_km = load_data()
+  File "/data/home/manjua/github_manjua/KSMoFinder/assessments/assessment4/phosformer-ST/compare_subassess2.py", line 31, in load_data
+    with open('data/phosphorylation_km_pairs.txt') as ip_f:
+FileNotFoundError: [Errno 2] No such file or directory: 'data/phosphorylation_km_pairs.txt'
+Comparing KSFinder 2.0 and LinkPhinder
+cuda
+data/classifier/td2_tr_dist/clf_test_data.csv
+{1: 2557, 0: 2557}
+KSFinder 2.0:: ROC-AUC: 0.917 | PR-AUC: 0.915
+KSFinder 2.0: CI (95%):: ('0.917+/-0.0', '0.915+/-0.001')
+LinkPhinder:: ROC-AUC: 0.816 | PR-AUC: 0.771
+LinkPhinder: CI (95%):: ('0.816+/-0.001', '0.771+/-0.001')
+{0: 3481, 1: 2557}
+KSFinder 2.0:: ROC-AUC: 0.917 | PR-AUC: 0.892
+KSFinder 2.0: CI (95%):: ('0.917+/-0.0', '0.892+/-0.001')
+LinkPhinder:: ROC-AUC: 0.814 | PR-AUC: 0.712
+LinkPhinder: CI (95%):: ('0.815+/-0.001', '0.713+/-0.001')
+Comparing KSFinder 2.0 and ksfinder
+cuda
+{1: 2657, 0: 2657}
+KSFinder 2.0:: ROC-AUC: 0.935 | PR-AUC: 0.93 | CI (95%):: ('0.935+/-0.0', '0.93+/-0.0')
+KSFinder:: ROC-AUC: 0.758 | PR-AUC: 0.746 | CI (95%):: ('0.758+/-0.001', '0.746+/-0.001')
+{0: 5393, 1: 2657}
+KSFinder 2.0:: ROC-AUC: 0.934 | PR-AUC: 0.873 | CI (95%):: ('0.934+/-0.0', '0.873+/-0.001')
+KSFinder:: ROC-AUC: 0.758 | PR-AUC: 0.599 | CI (95%):: ('0.758+/-0.001', '0.599+/-0.001')
+Comparing KSFinder 2.0 and predkinkg
+cuda
+{1: 2758, 0: 2758}
+KSFinder 2.0:: ROC-AUC: 0.932 | PR-AUC: 0.928
+KSFinder 2.0: CI (95%):: ('0.932+/-0.0', '0.928+/-0.0')
+PredKinKG:: ROC-AUC: 0.663 | PR-AUC: 0.654
+PredKinKG: CI (95%):: ('0.663+/-0.001', '0.654+/-0.001')
+{0: 5680, 1: 2758}
+KSFinder 2.0:: ROC-AUC: 0.933 | PR-AUC: 0.873
+KSFinder 2.0: CI (95%):: ('0.933+/-0.0', '0.873+/-0.001')
+PredKinKG:: ROC-AUC: 0.662 | PR-AUC: 0.489
+PredKinKG: CI (95%):: ('0.662+/-0.001', '0.489+/-0.001')
+Compare KSFinder 2.0 after removing easy test scenarios (similar kinase-motif)
+KSFinder 2.0 vs Phosformer-ST (subassessment 1)
+cuda
+18127
+Traceback (most recent call last):
+  File "/data/home/manjua/github_manjua/KSMoFinder/assessments/assessment4/phosformer-ST/compare_subassess1.py", line 43, in <module>
+    tr_pos_data_km = load_data()
+  File "/data/home/manjua/github_manjua/KSMoFinder/assessments/assessment4/phosformer-ST/compare_subassess1.py", line 32, in load_data
+    with open('data/phosphorylation_km_pairs.txt') as ip_f:
+FileNotFoundError: [Errno 2] No such file or directory: 'data/phosphorylation_km_pairs.txt'
+KSFinder 2.0 vs Phosformer-ST (subassessment 2)
+cuda
+18127
+Traceback (most recent call last):
+  File "/data/home/manjua/github_manjua/KSMoFinder/assessments/assessment4/phosformer-ST/compare_subassess2.py", line 42, in <module>
+    tr_pos_data_km = load_data()
+  File "/data/home/manjua/github_manjua/KSMoFinder/assessments/assessment4/phosformer-ST/compare_subassess2.py", line 31, in load_data
+    with open('data/phosphorylation_km_pairs.txt') as ip_f:
+FileNotFoundError: [Errno 2] No such file or directory: 'data/phosphorylation_km_pairs.txt'
+KSFinder 2.0 vs LinkPhinder
+cuda
+data/assessment4/td2_tr_dist/clf_test_data.csv
+{1: 2173, 0: 2173}
+KSFinder 2.0:: ROC-AUC: 0.902 | PR-AUC: 0.899
+KSFinder 2.0: CI (95%):: ('0.902+/-0.001', '0.899+/-0.001')
+LinkPhinder:: ROC-AUC: 0.824 | PR-AUC: 0.779
+LinkPhinder: CI (95%):: ('0.824+/-0.001', '0.78+/-0.001')
+{0: 2792, 1: 2173}
+KSFinder 2.0:: ROC-AUC: 0.904 | PR-AUC: 0.882
+KSFinder 2.0: CI (95%):: ('0.904+/-0.001', '0.882+/-0.001')
+LinkPhinder:: ROC-AUC: 0.823 | PR-AUC: 0.736
+LinkPhinder: CI (95%):: ('0.823+/-0.001', '0.737+/-0.001')
+-----------------Assessment4 Ended---------------------
+(Assessment5) Evaluation at group, family and kinase level
+cuda
+********* By kinase group **********
+AGC|(Positive: 737; Negative: 2145)|56|P17612,P25098,P17252,P31749,Q15418,P24723,P23443,Q9UBS0,O00141,Q16512,Q05655,Q13237,P22694,P51812,P31751,Q02156,Q05513,O75116,P05771-2,Q13976,P41743,P35626,P05771,Q9Y243,O95835,Q15835,Q9NRM7,O75582,P34947,O15530,P32298,Q13464,P43250,O75676,Q04759,Q9HBY8,P05129,Q9Y2H1,Q13976-2,Q5VT25,Q15208,P22612,Q9Y5S2,Q96BR1,Q15349,O60307,Q8WTQ7,O14578,P23443-2,Q9UK32,P51817,Q16513,Q6A1A2,Q09013,Q96GX5,Q6P5Z2|0.903|0.783
+Atypical|(Positive: 176; Negative: 681)|18|P78527,Q13315,Q13535,Q96QT4,P42345,P48736,Q8IXL6,Q96Q15,O00418,P42336,Q9BX84,O00443,P42338,Q96L96,O00329,Q9BRS2,Q96QP1,O14730|0.919|0.792
+CAMK|(Positive: 315; Negative: 1124)|60|Q8TDC3,Q15831,Q16816,Q13554,O14757,Q96RG2,O96017,Q13131,Q9UQM7,P53355,Q15139,O94806,Q9P0L2,P54646,P49137,P11309,Q13555,Q9H0K1,Q7KZI7,Q14680,O43293,Q14012,P57059,P11309-2,Q16566,Q8IWQ3,Q86V86,Q8IW41,Q13557,Q15746,Q9P1W9,O60285,Q9BUB5,Q9BZL6,Q8TDC3-2,Q9HBH9,P27448,O14936,Q16644,P15735,Q6SA08,Q9BYT3,O94768,Q9UEE5,P27448-3,Q92519,Q9H093,Q96NX5,Q9UIK4,Q9Y2K2,Q8WZ42,Q9H1R3,Q6P2M8,Q96L34,Q9BXA7,Q8IY84,Q32MK0,O15075,Q13557-8,P57058|0.865|0.672
+CK1|(Positive: 74; Negative: 229)|13|P48729,P48730,Q86Y07,Q5TCY1,P49674,Q99986,P78368,Q6IQ55,Q9HCP0,Q8IV63,Q86Y07-2,Q8N752,Q9Y6M4|0.933|0.83
+CMGC|(Positive: 1122; Negative: 2345)|61|P06493,Q15759,P27361,P24941,P50750,P45983,P49840,P68400,P49841,Q16539,P28482,P45984,O94921,Q00534,O15264,P11802,Q96SB4,P53778,Q9H2X6,Q13627,Q00526,Q00535,P49760,Q92630,P19784,O76039,P50613,Q13164,P53779,Q9UBE8,Q14004,P49336,Q9Y463,Q9BWU1,Q9NYV4,Q16659,Q8TD08,Q86Z02,P49759,Q8IZL9,Q15131,O43781,Q92772,P45983-2,Q13523,Q9UPZ9,P49841-2,Q07002,Q9H422,P20794,Q00537,Q9HAZ1,P49761,Q9NR20,Q96Q40,Q00536,P78362,Q9UQ88,P21127,P31152,P45984-2|0.927|0.876
+Other|(Positive: 300; Negative: 1762)|49|P53350,Q8IYT8,Q14164,O14965,Q96KB5,Q96GD4,Q8TDX7,Q9UKI8,O14920,P51955,O00311,O15111,Q9UHD2,O75385,Q9NYY3,Q96PY6,Q8TD19,O43683,P33981,P30291,O00444,Q9HC98,Q9BXM7,Q6PHR2,Q9UQB9,Q96RR4,Q9H4A3,Q9H4B4,P19525,O75716,Q9NZJ5,Q8TAS1,Q8N5S9,Q96J92,Q2M2I8,Q99640,Q86SG6,P51956,O75460,Q8NG66,Q9BQI3,P00540,Q86UE8,Q9BYP7,Q9NSY1,Q9Y3S1,Q8N165,O14976,Q6P3R8|0.934|0.734
+STE|(Positive: 110; Negative: 625)|41|Q13043,Q02750,Q13153,Q9UEW8,Q99558,Q7L7X3,Q9NQU5,O95747,Q9Y6E0,O95819,Q13177,Q13188,Q9H2G2,Q13233,O96013,Q99683,O14733,O95382,Q9P286,P41279,O75914,Q92918,Q9UL54,P45985,Q8IVH8,P52564,Q9Y2U5,P36507,O00506,P46734,Q99759,Q9P289,Q8N4C8,Q8NEV4,Q7Z2Y5,O94804,Q9UKE5,Q12851,Q13163,Q9Y4K4,Q9Y6R4|0.854|0.537
+TK|(Positive: 511; Negative: 2193)|80|P07948,P00519,P51813,P07947,P08631,Q13882,P04626,P42680,P12931,P07949,P06241,Q04912,P43405,P29597,Q9UM73,P06239,Q05397,P23458,P00533,P41240,Q16620,P43403,Q14289,P16591,O60674,P08581,P09619,P08069,P54764,P06213,Q02763,P54762,Q06187,Q12866,P29317,P42681,P04629,P51451,P35916,Q08881,Q08345,P09769,Q15303,P21802,P11362,P36888,P52333,P35968,P17948,P22455,P10721,P30530,P42684,Q07912,P29320,P16234,P42679,P42685,P07333,P29323,P07332,P22607,P21709,Q15375,Q13470,P29376,P29322,Q16832,Q8IWU2,P54753,P54760,P54756,Q16288,P08922,Q9H3Y6,Q6J9G0,Q9UF33,Q01973,Q06418,Q6ZMQ8|0.918|0.717
+TKL|(Positive: 65; Negative: 1167)|35|Q38SD2,Q5S007,O43318,P10398,P51617,P37173,Q13546,Q9NWZ3,P15056,P36896,P36897,P04049,O00238,Q16584,Q9Y572,Q9NYL2,Q02779,O43353,Q13705,P37023,P36894,Q6VAB6,Q8NER5,O43283,Q12852,Q96S53,Q13418,Q8IVT5,Q04771,P53667,Q15569,P53671,P80192,Q5TCX8,Q8NB16|0.954|0.532
+********* By kinase family **********
+AGC|Akt|(Positive: 113; Negative: 762)|3|P31749,P31751,Q9Y243|0.89|0.686
+AGC|DMPK|(Positive: 24; Negative: 112)|6|O75116,Q13464,Q5VT25,Q9Y5S2,O14578,Q09013|0.906|0.576
+AGC|GRK|(Positive: 36; Negative: 116)|7|P25098,P35626,Q15835,P34947,P32298,P43250,Q8WTQ7|0.862|0.728
+AGC|NDR|(Positive: 14; Negative: 59)|4|O95835,Q9NRM7,Q9Y2H1,Q15208|0.759|0.471
+AGC|PDK1|(Positive: 6; Negative: 24)|1|O15530|0.778|0.429
+AGC|PKA|(Positive: 162; Negative: 263)|4|P17612,P22694,P22612,P51817|0.9|0.869
+AGC|PKC|(Positive: 264; Negative: 446)|9|P17252,P24723,Q05655,Q02156,Q05513,P41743,P05771,Q04759,P05129|0.886|0.799
+AGC|PKG|(Positive: 23; Negative: 41)|2|Q13237,Q13976|0.949|0.926
+AGC|PKN|(Positive: 7; Negative: 47)|3|Q16512,Q16513,Q6P5Z2|0.936|0.681
+AGC|RSK|(Positive: 15; Negative: 31)|2|P23443,Q9UBS0|0.841|0.745
+AGC|SGK|(Positive: 16; Negative: 52)|3|O00141,Q9HBY8,Q96BR1|0.898|0.819
+Atypical|Alpha|(Positive: 14; Negative: 53)|5|Q96QT4,O00418,Q9BX84,Q96L96,Q96QP1|0.931|0.883
+Atypical|FAM20|(Positive: 2; Negative: 7)|1|Q8IXL6|0.857|0.583
+Atypical|PIKK|(Positive: 160; Negative: 611)|10|P78527,Q13315,Q13535,P42345,P48736,Q96Q15,P42336,O00443,P42338,O00329|0.918|0.786
+CAMK|CAMK1|(Positive: 8; Negative: 55)|4|Q14012,Q16566,Q96NX5,Q6P2M8|0.823|0.439
+CAMK|CAMK2|(Positive: 61; Negative: 166)|4|Q13554,Q9UQM7,Q13555,Q13557|0.763|0.578
+CAMK|CAMKL|(Positive: 137; Negative: 391)|19|Q8TDC3,Q15831,O14757,Q96RG2,Q13131,Q9P0L2,P54646,Q9H0K1,Q7KZI7,Q14680,P57059,Q8IWQ3,O60285,P27448,Q9H093,Q9Y2K2,Q96L34,Q8IY84,P57058|0.897|0.759
+CAMK|CASK|(Positive: 1; Negative: 8)|1|O14936|0.5|0.2
+CAMK|DAPK|(Positive: 11; Negative: 67)|5|P53355,O43293,O94768,Q9UEE5,Q9UIK4|0.847|0.705
+CAMK|MAPKAPK|(Positive: 27; Negative: 92)|5|P49137,Q8IW41,Q9BUB5,Q9HBH9,Q16644|0.882|0.664
+CAMK|MLCK|(Positive: 2; Negative: 44)|4|Q15746,Q8WZ42,Q9H1R3,Q32MK0|0.955|0.45
+CAMK|PHK|(Positive: 2; Negative: 24)|2|Q16816,P15735|0.833|0.361
+CAMK|PIM|(Positive: 22; Negative: 77)|3|P11309,Q86V86,Q9P1W9|0.866|0.764
+CAMK|PKD|(Positive: 25; Negative: 80)|3|Q15139,O94806,Q9BZL6|0.772|0.572
+CAMK|RAD53|(Positive: 17; Negative: 38)|1|O96017|0.865|0.73
+CK1|CK1-A|(Positive: 31; Negative: 61)|2|P48729,Q8N752|0.971|0.952
+CK1|CK1-D|(Positive: 34; Negative: 69)|2|P48730,P49674|0.893|0.799
+CK1|CK1-G|(Positive: 2; Negative: 28)|3|P78368,Q9HCP0,Q9Y6M4|0.679|0.162
+CK1|TTBK|(Positive: 2; Negative: 25)|2|Q5TCY1,Q6IQ55|0.86|0.611
+CK1|VRK|(Positive: 5; Negative: 32)|3|Q86Y07,Q99986,Q8IV63|0.938|0.867
+CMGC|CDK|(Positive: 361; Negative: 926)|21|P06493,P24941,P50750,O94921,Q00534,P11802,Q00526,Q00535,P50613,Q14004,P49336,Q9BWU1,Q9NYV4,Q8IZL9,Q15131,Q07002,Q00537,Q96Q40,Q00536,Q9UQ88,P21127|0.935|0.89
+CMGC|CDKL|(Positive: 5; Negative: 28)|2|O76039,Q92772|0.65|0.438
+CMGC|CK2|(Positive: 156; Negative: 221)|2|P68400,P19784|0.948|0.923
+CMGC|CLK|(Positive: 4; Negative: 54)|4|P49760,P49759,Q9HAZ1,P49761|0.926|0.67
+CMGC|DYRK|(Positive: 41; Negative: 141)|9|Q9H2X6,Q13627,Q92630,Q9Y463,Q86Z02,O43781,Q13523,Q9H422,Q9NR20|0.892|0.725
+CMGC|GSK|(Positive: 121; Negative: 219)|2|P49840,P49841|0.837|0.774
+CMGC|MAPK|(Positive: 431; Negative: 707)|14|Q15759,P27361,P45983,Q16539,P28482,P45984,O15264,P53778,Q13164,P53779,Q9UBE8,Q16659,Q8TD08,P31152|0.932|0.886
+CMGC|SRPK|(Positive: 3; Negative: 16)|2|Q96SB4,P78362|0.958|0.867
+Other|Aur|(Positive: 67; Negative: 120)|3|O14965,Q96GD4,Q9UQB9|0.945|0.903
+Other|BUB|(Positive: 5; Negative: 26)|1|O43683|0.754|0.414
+Other|CAMKK|(Positive: 3; Negative: 56)|2|Q96RR4,Q8N5S9|0.946|0.6
+Other|CDC7|(Positive: 10; Negative: 29)|1|O00311|0.876|0.78
+Other|IKK|(Positive: 62; Negative: 117)|4|Q14164,O14920,O15111,Q9UHD2|0.844|0.766
+Other|KIS|(Positive: 1; Negative: 10)|1|Q8TAS1|1.0|1.0
+Other|NAK|(Positive: 1; Negative: 841)|4|O75716,Q2M2I8,Q9NSY1,O14976|0.999|0.5
+Other|NEK|(Positive: 17; Negative: 106)|9|Q8TDX7,P51955,Q96PY6,Q8TD19,Q9HC98,Q86SG6,P51956,Q8NG66,Q6P3R8|0.916|0.598
+Other|NKF2|(Positive: 4; Negative: 13)|1|Q9BXM7|0.865|0.604
+Other|PEK|(Positive: 5; Negative: 37)|3|P19525,Q9NZJ5,Q9BQI3|1.0|1.0
+Other|PLK|(Positive: 85; Negative: 199)|4|P53350,Q9NYY3,O00444,Q9H4B4|0.861|0.741
+Other|TLK|(Positive: 2; Negative: 25)|2|Q9UKI8,Q86UE8|0.56|0.117
+Other|TOPK|(Positive: 2; Negative: 16)|1|Q96KB5|0.469|0.155
+Other|TTK|(Positive: 13; Negative: 31)|1|P33981|0.873|0.803
+Other|ULK|(Positive: 18; Negative: 52)|3|Q8IYT8,O75385,Q6PHR2|0.792|0.516
+Other|WEE|(Positive: 1; Negative: 16)|2|P30291,Q99640|0.562|0.125
+Other|WNK|(Positive: 4; Negative: 40)|4|Q9H4A3,Q96J92,Q9BYP7,Q9Y3S1|0.775|0.403
+STE|COT|(Positive: 4; Negative: 22)|1|P41279|1.0|1.0
+STE|NIK|(Positive: 2; Negative: 19)|1|Q99558|0.921|0.5
+STE|STE11|(Positive: 11; Negative: 78)|6|Q13233,Q99683,O95382,Q9Y2U5,Q99759,Q9Y6R4|0.893|0.624
+STE|STE20|(Positive: 78; Negative: 402)|26|Q13043,Q13153,Q9UEW8,Q7L7X3,Q9NQU5,O95747,Q9Y6E0,O95819,Q13177,Q13188,Q9H2G2,O96013,Q9P286,O75914,Q92918,Q9UL54,Q8IVH8,O00506,Q9P289,Q8N4C8,Q8NEV4,Q7Z2Y5,O94804,Q9UKE5,Q12851,Q9Y4K4|0.837|0.563
+STE|STE7|(Positive: 15; Negative: 104)|7|Q02750,O14733,P45985,P52564,P36507,P46734,Q13163|0.868|0.445
+TK|ALK|(Positive: 3; Negative: 52)|2|Q9UM73,P29376|0.788|0.276
+TK|Abl|(Positive: 55; Negative: 386)|2|P00519,P42684|0.957|0.789
+TK|Ack|(Positive: 4; Negative: 33)|2|Q07912,Q13470|0.864|0.527
+TK|Axl|(Positive: 4; Negative: 47)|3|Q12866,P30530,Q06418|0.809|0.403
+TK|Csk|(Positive: 6; Negative: 37)|2|P41240,P42679|0.73|0.246
+TK|DDR|(Positive: 1; Negative: 49)|2|Q08345,Q16832|0.776|0.083
+TK|EGFR|(Positive: 26; Negative: 145)|3|P04626,P00533,Q15303|0.866|0.536
+TK|Eph|(Positive: 6; Negative: 164)|12|P54764,P54762,P29317,P29320,P29323,P21709,Q15375,P29322,P54753,P54760,P54756,Q9UF33|0.942|0.426
+TK|FAK|(Positive: 12; Negative: 53)|2|Q05397,Q14289|0.821|0.488
+TK|FGFR|(Positive: 12; Negative: 64)|4|P21802,P11362,P22455,P22607|0.85|0.431
+TK|Fer|(Positive: 6; Negative: 35)|2|P16591,P07332|0.914|0.526
+TK|InsR|(Positive: 17; Negative: 49)|2|P08069,P06213|0.947|0.878
+TK|Met|(Positive: 7; Negative: 43)|2|Q04912,P08581|0.973|0.924
+TK|PDGFR|(Positive: 19; Negative: 98)|5|P09619,P36888,P10721,P16234,P07333|0.934|0.716
+TK|Ret|(Positive: 8; Negative: 35)|1|P07949|0.889|0.659
+TK|Src|(Positive: 240; Negative: 524)|11|P07948,P07947,P08631,Q13882,P12931,P06241,P06239,P51451,P09769,P42685,Q9H3Y6|0.924|0.83
+TK|Syk|(Positive: 30; Negative: 61)|2|P43405,P43403|0.901|0.827
+TK|Tec|(Positive: 17; Negative: 102)|5|P51813,P42680,Q06187,P42681,Q08881|0.862|0.507
+TK|Tie|(Positive: 1; Negative: 7)|1|Q02763|1.0|1.0
+TK|Trk|(Positive: 8; Negative: 35)|3|Q16620,P04629,Q16288|0.946|0.804
+TK|VEGFR|(Positive: 5; Negative: 36)|3|P35916,P35968,P17948|0.772|0.342
+TKL|IRAK|(Positive: 11; Negative: 32)|2|P51617,Q9NWZ3|0.943|0.762
+TKL|LRRK|(Positive: 22; Negative: 54)|2|Q38SD2,Q5S007|0.927|0.78
+TKL|MLK|(Positive: 13; Negative: 105)|9|O43318,Q16584,Q9NYL2,Q02779,O43283,Q12852,Q13418,P80192,Q5TCX8|0.919|0.714
+TKL|RAF|(Positive: 7; Negative: 86)|5|P10398,P15056,P04049,Q6VAB6,Q8IVT5|0.699|0.163
+TKL|RIPK|(Positive: 3; Negative: 43)|3|Q13546,Q9Y572,O43353|0.698|0.408
+TKL|STKR|(Positive: 9; Negative: 803)|9|P37173,P36896,P36897,O00238,Q13705,P37023,P36894,Q8NER5,Q04771|0.989|0.452
+********* By kinases **********
+AGC|Akt|(Positive: 84; Negative: 494)|P31749|0.87|0.68
+AGC|Akt|(Positive: 23; Negative: 179)|P31751|0.933|0.759
+AGC|Akt|(Positive: 6; Negative: 89)|Q9Y243|0.974|0.793
+AGC|DMPK|(Positive: 8; Negative: 26)|O75116|0.702|0.476
+AGC|DMPK|(Positive: 13; Negative: 38)|Q13464|0.964|0.805
+AGC|DMPK|(Positive: 2; Negative: 17)|Q5VT25|1.0|1.0
+AGC|DMPK|(Positive: 1; Negative: 11)|Q9Y5S2|0.909|0.5
+AGC|GRK|(Positive: 18; Negative: 39)|P25098|0.886|0.762
+AGC|GRK|(Positive: 2; Negative: 8)|P32298|1.0|1.0
+AGC|GRK|(Positive: 7; Negative: 18)|P34947|0.921|0.877
+AGC|GRK|(Positive: 3; Negative: 14)|P35626|1.0|1.0
+AGC|GRK|(Positive: 4; Negative: 18)|P43250|0.458|0.406
+AGC|GRK|(Positive: 2; Negative: 11)|Q15835|0.5|0.258
+AGC|NDR|(Positive: 5; Negative: 19)|O95835|0.884|0.714
+AGC|NDR|(Positive: 3; Negative: 16)|Q15208|0.771|0.738
+AGC|NDR|(Positive: 5; Negative: 13)|Q9NRM7|0.677|0.512
+AGC|NDR|(Positive: 1; Negative: 11)|Q9Y2H1|0.636|0.2
+AGC|PDK1|(Positive: 6; Negative: 24)|O15530|0.778|0.429
+AGC|PKA|(Positive: 157; Negative: 237)|P17612|0.904|0.877
+AGC|PKA|(Positive: 2; Negative: 7)|P22612|1.0|1.0
+AGC|PKA|(Positive: 3; Negative: 12)|P22694|0.639|0.361
+AGC|PKC|(Positive: 10; Negative: 27)|P05129|0.974|0.929
+AGC|PKC|(Positive: 26; Negative: 47)|P05771|0.849|0.669
+AGC|PKC|(Positive: 123; Negative: 182)|P17252|0.879|0.841
+AGC|PKC|(Positive: 4; Negative: 12)|P24723|1.0|1.0
+AGC|PKC|(Positive: 10; Negative: 23)|P41743|0.948|0.892
+AGC|PKC|(Positive: 18; Negative: 31)|Q02156|0.88|0.76
+AGC|PKC|(Positive: 11; Negative: 20)|Q04759|0.764|0.595
+AGC|PKC|(Positive: 23; Negative: 39)|Q05513|0.916|0.889
+AGC|PKC|(Positive: 39; Negative: 65)|Q05655|0.896|0.843
+AGC|PKG|(Positive: 8; Negative: 15)|Q13237|0.958|0.929
+AGC|PKG|(Positive: 15; Negative: 26)|Q13976|0.987|0.976
+AGC|PKN|(Positive: 7; Negative: 26)|Q16512|0.912|0.716
+AGC|RSK|(Positive: 13; Negative: 21)|P23443|0.839|0.792
+AGC|RSK|(Positive: 2; Negative: 10)|Q9UBS0|0.8|0.417
+AGC|SGK|(Positive: 14; Negative: 33)|O00141|0.937|0.915
+AGC|SGK|(Positive: 1; Negative: 11)|Q96BR1|1.0|1.0
+AGC|SGK|(Positive: 1; Negative: 8)|Q9HBY8|0.875|0.5
+Atypical|Alpha|(Positive: 3; Negative: 16)|O00418|0.75|0.466
+Atypical|Alpha|(Positive: 11; Negative: 15)|Q96QT4|0.982|0.978
+Atypical|FAM20|(Positive: 2; Negative: 7)|Q8IXL6|0.857|0.583
+Atypical|PIKK|(Positive: 1; Negative: 12)|P42336|0.25|0.1
+Atypical|PIKK|(Positive: 31; Negative: 65)|P42345|0.799|0.697
+Atypical|PIKK|(Positive: 1; Negative: 16)|P48736|1.0|1.0
+Atypical|PIKK|(Positive: 29; Negative: 44)|P78527|0.978|0.966
+Atypical|PIKK|(Positive: 69; Negative: 305)|Q13315|0.898|0.755
+Atypical|PIKK|(Positive: 28; Negative: 132)|Q13535|0.956|0.72
+Atypical|PIKK|(Positive: 1; Negative: 13)|Q96Q15|1.0|1.0
+CAMK|CAMK1|(Positive: 5; Negative: 13)|Q14012|0.785|0.68
+CAMK|CAMK1|(Positive: 3; Negative: 18)|Q16566|0.833|0.383
+CAMK|CAMK2|(Positive: 6; Negative: 30)|Q13554|0.628|0.479
+CAMK|CAMK2|(Positive: 6; Negative: 27)|Q13555|0.704|0.353
+CAMK|CAMK2|(Positive: 7; Negative: 24)|Q13557|0.833|0.716
+CAMK|CAMK2|(Positive: 42; Negative: 85)|Q9UQM7|0.785|0.669
+CAMK|CAMKL|(Positive: 40; Negative: 60)|O14757|0.884|0.813
+CAMK|CAMKL|(Positive: 2; Negative: 11)|O60285|1.0|1.0
+CAMK|CAMKL|(Positive: 1; Negative: 10)|P27448|1.0|1.0
+CAMK|CAMKL|(Positive: 14; Negative: 30)|P54646|0.936|0.855
+CAMK|CAMKL|(Positive: 5; Negative: 14)|P57059|1.0|1.0
+CAMK|CAMKL|(Positive: 41; Negative: 66)|Q13131|0.88|0.834
+CAMK|CAMKL|(Positive: 5; Negative: 18)|Q14680|0.933|0.86
+CAMK|CAMKL|(Positive: 9; Negative: 21)|Q15831|0.884|0.691
+CAMK|CAMKL|(Positive: 6; Negative: 28)|Q7KZI7|0.851|0.743
+CAMK|CAMKL|(Positive: 2; Negative: 27)|Q8IWQ3|0.907|0.417
+CAMK|CAMKL|(Positive: 2; Negative: 32)|Q8TDC3|1.0|1.0
+CAMK|CAMKL|(Positive: 3; Negative: 12)|Q96RG2|0.917|0.833
+CAMK|CAMKL|(Positive: 2; Negative: 12)|Q9H0K1|0.75|0.333
+CAMK|CAMKL|(Positive: 5; Negative: 16)|Q9P0L2|0.788|0.572
+CAMK|CASK|(Positive: 1; Negative: 8)|O14936|0.5|0.2
+CAMK|DAPK|(Positive: 4; Negative: 12)|O43293|0.625|0.53
+CAMK|DAPK|(Positive: 7; Negative: 19)|P53355|0.955|0.912
+CAMK|MAPKAPK|(Positive: 20; Negative: 47)|P49137|0.934|0.853
+CAMK|MAPKAPK|(Positive: 1; Negative: 9)|Q16644|0.889|0.5
+CAMK|MAPKAPK|(Positive: 3; Negative: 14)|Q8IW41|0.571|0.503
+CAMK|MAPKAPK|(Positive: 2; Negative: 13)|Q9BUB5|0.962|0.833
+CAMK|MAPKAPK|(Positive: 1; Negative: 9)|Q9HBH9|0.778|0.333
+CAMK|MLCK|(Positive: 2; Negative: 12)|Q15746|0.917|0.75
+CAMK|PHK|(Positive: 2; Negative: 8)|Q16816|0.875|0.75
+CAMK|PIM|(Positive: 14; Negative: 43)|P11309|0.786|0.689
+CAMK|PIM|(Positive: 2; Negative: 14)|Q86V86|1.0|1.0
+CAMK|PIM|(Positive: 6; Negative: 20)|Q9P1W9|0.967|0.911
+CAMK|PKD|(Positive: 2; Negative: 17)|O94806|0.647|0.327
+CAMK|PKD|(Positive: 19; Negative: 45)|Q15139|0.745|0.55
+CAMK|PKD|(Positive: 4; Negative: 18)|Q9BZL6|1.0|1.0
+CAMK|RAD53|(Positive: 17; Negative: 38)|O96017|0.865|0.73
+CK1|CK1-A|(Positive: 31; Negative: 45)|P48729|0.967|0.958
+CK1|CK1-D|(Positive: 20; Negative: 32)|P48730|0.928|0.874
+CK1|CK1-D|(Positive: 14; Negative: 37)|P49674|0.834|0.597
+CK1|CK1-G|(Positive: 1; Negative: 6)|P78368|0.5|0.25
+CK1|CK1-G|(Positive: 1; Negative: 11)|Q9HCP0|0.727|0.25
+CK1|TTBK|(Positive: 1; Negative: 14)|Q5TCY1|0.714|0.2
+CK1|TTBK|(Positive: 1; Negative: 11)|Q6IQ55|1.0|1.0
+CK1|VRK|(Positive: 2; Negative: 17)|Q86Y07|0.794|0.611
+CK1|VRK|(Positive: 3; Negative: 10)|Q99986|1.0|1.0
+CMGC|CDK|(Positive: 2; Negative: 16)|O94921|0.5|0.171
+CMGC|CDK|(Positive: 151; Negative: 306)|P06493|0.944|0.915
+CMGC|CDK|(Positive: 17; Negative: 44)|P11802|0.984|0.962
+CMGC|CDK|(Positive: 96; Negative: 191)|P24941|0.935|0.917
+CMGC|CDK|(Positive: 3; Negative: 13)|P49336|1.0|1.0
+CMGC|CDK|(Positive: 13; Negative: 29)|P50613|0.96|0.934
+CMGC|CDK|(Positive: 12; Negative: 33)|P50750|0.899|0.819
+CMGC|CDK|(Positive: 3; Negative: 19)|Q00526|0.667|0.519
+CMGC|CDK|(Positive: 9; Negative: 36)|Q00534|0.929|0.874
+CMGC|CDK|(Positive: 49; Negative: 91)|Q00535|0.924|0.884
+CMGC|CDK|(Positive: 3; Negative: 19)|Q14004|0.947|0.833
+CMGC|CDK|(Positive: 1; Negative: 13)|Q9BWU1|0.692|0.2
+CMGC|CDK|(Positive: 2; Negative: 24)|Q9NYV4|0.896|0.643
+CMGC|CDKL|(Positive: 5; Negative: 18)|O76039|0.644|0.488
+CMGC|CK2|(Positive: 18; Negative: 34)|P19784|0.943|0.906
+CMGC|CK2|(Positive: 138; Negative: 187)|P68400|0.949|0.927
+CMGC|CLK|(Positive: 2; Negative: 22)|P49759|0.977|0.833
+CMGC|CLK|(Positive: 2; Negative: 11)|P49760|0.864|0.7
+CMGC|DYRK|(Positive: 15; Negative: 33)|Q13627|0.899|0.863
+CMGC|DYRK|(Positive: 1; Negative: 8)|Q86Z02|1.0|1.0
+CMGC|DYRK|(Positive: 10; Negative: 26)|Q92630|0.808|0.664
+CMGC|DYRK|(Positive: 12; Negative: 33)|Q9H2X6|0.985|0.951
+CMGC|DYRK|(Positive: 3; Negative: 10)|Q9Y463|0.7|0.6
+CMGC|GSK|(Positive: 20; Negative: 47)|P49840|0.898|0.824
+CMGC|GSK|(Positive: 101; Negative: 172)|P49841|0.827|0.769
+CMGC|MAPK|(Positive: 10; Negative: 24)|O15264|0.804|0.672
+CMGC|MAPK|(Positive: 101; Negative: 146)|P27361|0.935|0.889
+CMGC|MAPK|(Positive: 148; Negative: 205)|P28482|0.946|0.921
+CMGC|MAPK|(Positive: 44; Negative: 75)|P45983|0.922|0.896
+CMGC|MAPK|(Positive: 22; Negative: 43)|P45984|0.976|0.959
+CMGC|MAPK|(Positive: 11; Negative: 24)|P53778|0.833|0.744
+CMGC|MAPK|(Positive: 11; Negative: 28)|P53779|0.873|0.764
+CMGC|MAPK|(Positive: 8; Negative: 16)|Q13164|1.0|1.0
+CMGC|MAPK|(Positive: 11; Negative: 19)|Q15759|0.914|0.923
+CMGC|MAPK|(Positive: 58; Negative: 85)|Q16539|0.933|0.906
+CMGC|MAPK|(Positive: 1; Negative: 6)|Q16659|0.667|0.333
+CMGC|MAPK|(Positive: 2; Negative: 15)|Q8TD08|0.867|0.667
+CMGC|MAPK|(Positive: 4; Negative: 17)|Q9UBE8|0.868|0.827
+CMGC|SRPK|(Positive: 3; Negative: 9)|Q96SB4|0.926|0.867
+Other|Aur|(Positive: 27; Negative: 50)|O14965|0.918|0.869
+Other|Aur|(Positive: 39; Negative: 58)|Q96GD4|0.962|0.933
+Other|Aur|(Positive: 1; Negative: 12)|Q9UQB9|1.0|1.0
+Other|BUB|(Positive: 5; Negative: 26)|O43683|0.754|0.414
+Other|CAMKK|(Positive: 1; Negative: 30)|Q8N5S9|0.867|0.2
+Other|CAMKK|(Positive: 2; Negative: 26)|Q96RR4|0.981|0.833
+Other|CDC7|(Positive: 10; Negative: 29)|O00311|0.876|0.78
+Other|IKK|(Positive: 23; Negative: 30)|O14920|0.884|0.857
+Other|IKK|(Positive: 10; Negative: 24)|O15111|0.879|0.814
+Other|IKK|(Positive: 12; Negative: 26)|Q14164|0.859|0.781
+Other|IKK|(Positive: 17; Negative: 37)|Q9UHD2|0.742|0.653
+Other|KIS|(Positive: 1; Negative: 10)|Q8TAS1|1.0|1.0
+Other|NAK|(Positive: 1; Negative: 5)|O75716|1.0|1.0
+Other|NEK|(Positive: 8; Negative: 24)|P51955|0.812|0.724
+Other|NEK|(Positive: 1; Negative: 8)|Q8TD19|1.0|1.0
+Other|NEK|(Positive: 1; Negative: 7)|Q8TDX7|0.714|0.333
+Other|NEK|(Positive: 2; Negative: 13)|Q96PY6|1.0|1.0
+Other|NEK|(Positive: 5; Negative: 15)|Q9HC98|0.907|0.66
+Other|NKF2|(Positive: 4; Negative: 13)|Q9BXM7|0.865|0.604
+Other|PEK|(Positive: 4; Negative: 13)|P19525|1.0|1.0
+Other|PEK|(Positive: 1; Negative: 9)|Q9NZJ5|1.0|1.0
+Other|PLK|(Positive: 9; Negative: 24)|O00444|0.736|0.479
+Other|PLK|(Positive: 65; Negative: 131)|P53350|0.842|0.736
+Other|PLK|(Positive: 6; Negative: 20)|Q9H4B4|0.983|0.948
+Other|PLK|(Positive: 5; Negative: 24)|Q9NYY3|0.992|0.967
+Other|TLK|(Positive: 2; Negative: 17)|Q9UKI8|0.647|0.194
+Other|TOPK|(Positive: 2; Negative: 16)|Q96KB5|0.469|0.155
+Other|TTK|(Positive: 13; Negative: 31)|P33981|0.873|0.803
+Other|ULK|(Positive: 16; Negative: 34)|O75385|0.754|0.538
+Other|ULK|(Positive: 1; Negative: 8)|Q6PHR2|1.0|1.0
+Other|ULK|(Positive: 1; Negative: 10)|Q8IYT8|0.9|0.5
+Other|WEE|(Positive: 1; Negative: 7)|P30291|0.143|0.143
+Other|WNK|(Positive: 1; Negative: 9)|Q96J92|1.0|1.0
+Other|WNK|(Positive: 3; Negative: 12)|Q9H4A3|0.583|0.279
+STE|COT|(Positive: 4; Negative: 22)|P41279|1.0|1.0
+STE|NIK|(Positive: 2; Negative: 19)|Q99558|0.921|0.5
+STE|STE11|(Positive: 1; Negative: 10)|O95382|0.9|0.5
+STE|STE11|(Positive: 2; Negative: 16)|Q13233|0.969|0.833
+STE|STE11|(Positive: 6; Negative: 23)|Q99683|0.971|0.917
+STE|STE11|(Positive: 1; Negative: 7)|Q99759|0.429|0.2
+STE|STE11|(Positive: 1; Negative: 13)|Q9Y2U5|0.615|0.167
+STE|STE20|(Positive: 1; Negative: 5)|O00506|0.4|0.25
+STE|STE20|(Positive: 2; Negative: 11)|O75914|0.955|0.833
+STE|STE20|(Positive: 3; Negative: 13)|O95747|0.897|0.81
+STE|STE20|(Positive: 2; Negative: 15)|O95819|0.833|0.643
+STE|STE20|(Positive: 5; Negative: 19)|O96013|0.842|0.639
+STE|STE20|(Positive: 8; Negative: 22)|Q13043|0.892|0.805
+STE|STE20|(Positive: 20; Negative: 57)|Q13153|0.858|0.754
+STE|STE20|(Positive: 12; Negative: 37)|Q13177|0.896|0.81
+STE|STE20|(Positive: 6; Negative: 35)|Q13188|0.919|0.711
+STE|STE20|(Positive: 2; Negative: 14)|Q7L7X3|0.643|0.225
+STE|STE20|(Positive: 1; Negative: 10)|Q8IVH8|0.9|0.5
+STE|STE20|(Positive: 1; Negative: 9)|Q8N4C8|0.889|0.5
+STE|STE20|(Positive: 1; Negative: 7)|Q8NEV4|1.0|1.0
+STE|STE20|(Positive: 1; Negative: 7)|Q92918|1.0|1.0
+STE|STE20|(Positive: 1; Negative: 10)|Q9H2G2|0.7|0.25
+STE|STE20|(Positive: 2; Negative: 16)|Q9NQU5|0.812|0.333
+STE|STE20|(Positive: 2; Negative: 16)|Q9P286|0.938|0.583
+STE|STE20|(Positive: 2; Negative: 18)|Q9P289|0.611|0.238
+STE|STE20|(Positive: 3; Negative: 10)|Q9UEW8|0.8|0.778
+STE|STE20|(Positive: 1; Negative: 15)|Q9UL54|1.0|1.0
+STE|STE20|(Positive: 2; Negative: 11)|Q9Y6E0|0.591|0.243
+STE|STE7|(Positive: 2; Negative: 15)|O14733|1.0|1.0
+STE|STE7|(Positive: 1; Negative: 15)|P36507|0.933|0.5
+STE|STE7|(Positive: 5; Negative: 15)|P45985|0.88|0.628
+STE|STE7|(Positive: 1; Negative: 15)|P46734|1.0|1.0
+STE|STE7|(Positive: 1; Negative: 14)|P52564|0.929|0.5
+STE|STE7|(Positive: 5; Negative: 16)|Q02750|0.775|0.626
+TK|ALK|(Positive: 3; Negative: 40)|Q9UM73|0.767|0.292
+TK|Abl|(Positive: 49; Negative: 363)|P00519|0.961|0.801
+TK|Abl|(Positive: 6; Negative: 23)|P42684|0.906|0.681
+TK|Ack|(Positive: 4; Negative: 12)|Q07912|0.854|0.668
+TK|Axl|(Positive: 3; Negative: 29)|P30530|0.701|0.19
+TK|Axl|(Positive: 1; Negative: 11)|Q12866|1.0|1.0
+TK|Csk|(Positive: 5; Negative: 28)|P41240|0.664|0.232
+TK|Csk|(Positive: 1; Negative: 9)|P42679|1.0|1.0
+TK|DDR|(Positive: 1; Negative: 27)|Q08345|0.815|0.167
+TK|EGFR|(Positive: 22; Negative: 106)|P00533|0.861|0.598
+TK|EGFR|(Positive: 2; Negative: 24)|P04626|0.875|0.393
+TK|EGFR|(Positive: 2; Negative: 15)|Q15303|1.0|1.0
+TK|Eph|(Positive: 2; Negative: 13)|P29317|0.962|0.833
+TK|Eph|(Positive: 1; Negative: 22)|P29320|1.0|1.0
+TK|Eph|(Positive: 1; Negative: 14)|P29323|0.857|0.333
+TK|Eph|(Positive: 1; Negative: 13)|P54762|0.923|0.5
+TK|Eph|(Positive: 1; Negative: 11)|P54764|0.909|0.5
+TK|FAK|(Positive: 8; Negative: 32)|Q05397|0.848|0.569
+TK|FAK|(Positive: 4; Negative: 21)|Q14289|0.762|0.514
+TK|FGFR|(Positive: 8; Negative: 24)|P11362|0.839|0.58
+TK|FGFR|(Positive: 2; Negative: 16)|P21802|0.938|0.583
+TK|FGFR|(Positive: 1; Negative: 8)|P22455|0.25|0.143
+TK|FGFR|(Positive: 1; Negative: 16)|P22607|0.875|0.333
+TK|Fer|(Positive: 1; Negative: 13)|P07332|0.846|0.333
+TK|Fer|(Positive: 5; Negative: 22)|P16591|0.936|0.73
+TK|InsR|(Positive: 10; Negative: 31)|P06213|0.935|0.841
+TK|InsR|(Positive: 7; Negative: 18)|P08069|0.968|0.937
+TK|Met|(Positive: 5; Negative: 29)|P08581|0.959|0.891
+TK|Met|(Positive: 2; Negative: 14)|Q04912|1.0|1.0
+TK|PDGFR|(Positive: 1; Negative: 10)|P07333|1.0|1.0
+TK|PDGFR|(Positive: 8; Negative: 26)|P09619|0.981|0.942
+TK|PDGFR|(Positive: 3; Negative: 13)|P10721|0.923|0.639
+TK|PDGFR|(Positive: 2; Negative: 22)|P16234|0.864|0.333
+TK|PDGFR|(Positive: 5; Negative: 27)|P36888|0.881|0.657
+TK|Ret|(Positive: 8; Negative: 35)|P07949|0.889|0.659
+TK|Src|(Positive: 25; Negative: 63)|P06239|0.95|0.897
+TK|Src|(Positive: 34; Negative: 62)|P06241|0.906|0.825
+TK|Src|(Positive: 4; Negative: 22)|P07947|0.955|0.817
+TK|Src|(Positive: 24; Negative: 67)|P07948|0.935|0.862
+TK|Src|(Positive: 9; Negative: 30)|P08631|0.941|0.772
+TK|Src|(Positive: 4; Negative: 17)|P09769|0.809|0.601
+TK|Src|(Positive: 127; Negative: 174)|P12931|0.91|0.852
+TK|Src|(Positive: 1; Negative: 15)|P42685|0.867|0.333
+TK|Src|(Positive: 3; Negative: 32)|P51451|0.958|0.589
+TK|Src|(Positive: 9; Negative: 25)|Q13882|0.947|0.908
+TK|Syk|(Positive: 10; Negative: 30)|P43403|0.967|0.91
+TK|Syk|(Positive: 20; Negative: 31)|P43405|0.84|0.806
+TK|Tec|(Positive: 3; Negative: 26)|P42680|0.923|0.478
+TK|Tec|(Positive: 1; Negative: 19)|P42681|1.0|1.0
+TK|Tec|(Positive: 4; Negative: 22)|P51813|0.727|0.548
+TK|Tec|(Positive: 5; Negative: 20)|Q06187|0.86|0.618
+TK|Tec|(Positive: 4; Negative: 15)|Q08881|0.967|0.888
+TK|Tie|(Positive: 1; Negative: 7)|Q02763|1.0|1.0
+TK|Trk|(Positive: 4; Negative: 13)|P04629|0.962|0.917
+TK|Trk|(Positive: 4; Negative: 13)|Q16620|0.923|0.771
+TK|VEGFR|(Positive: 1; Negative: 11)|P17948|0.818|0.333
+TK|VEGFR|(Positive: 2; Negative: 12)|P35916|0.458|0.208
+TK|VEGFR|(Positive: 2; Negative: 13)|P35968|1.0|1.0
+TKL|IRAK|(Positive: 4; Negative: 15)|P51617|0.933|0.679
+TKL|IRAK|(Positive: 7; Negative: 17)|Q9NWZ3|0.975|0.948
+TKL|LRRK|(Positive: 4; Negative: 15)|Q38SD2|1.0|1.0
+TKL|LRRK|(Positive: 18; Negative: 39)|Q5S007|0.905|0.771
+TKL|MLK|(Positive: 7; Negative: 25)|O43318|0.926|0.824
+TKL|MLK|(Positive: 1; Negative: 8)|Q02779|1.0|1.0
+TKL|MLK|(Positive: 2; Negative: 17)|Q16584|0.765|0.361
+TKL|MLK|(Positive: 3; Negative: 10)|Q9NYL2|1.0|1.0
+TKL|RAF|(Positive: 3; Negative: 22)|P04049|0.924|0.556
+TKL|RAF|(Positive: 1; Negative: 7)|P10398|1.0|1.0
+TKL|RAF|(Positive: 3; Negative: 44)|P15056|0.515|0.083
+TKL|RIPK|(Positive: 1; Negative: 19)|O43353|0.368|0.077
+TKL|RIPK|(Positive: 1; Negative: 9)|Q13546|1.0|1.0
+TKL|RIPK|(Positive: 1; Negative: 15)|Q9Y572|0.667|0.167
+TKL|STKR|(Positive: 2; Negative: 43)|O00238|0.953|0.417
+TKL|STKR|(Positive: 1; Negative: 9)|P36896|0.333|0.143
+TKL|STKR|(Positive: 3; Negative: 12)|P36897|0.944|0.806
+TKL|STKR|(Positive: 3; Negative: 14)|P37173|1.0|1.0
+AGC||(Positive: 7; Negative: 16)|O75582|0.92|0.86
+AGC||(Positive: 1; Negative: 12)|O75676|0.667|0.2
+AGC||(Positive: 10; Negative: 23)|P05771-2|0.909|0.867
+AGC||(Positive: 16; Negative: 36)|P51812|0.948|0.893
+AGC||(Positive: 1; Negative: 15)|Q13976-2|1.0|1.0
+AGC||(Positive: 1; Negative: 7)|Q15349|0.429|0.2
+AGC||(Positive: 21; Negative: 39)|Q15418|0.957|0.913
+CAMK||(Positive: 1; Negative: 11)|P11309-2|1.0|1.0
+CAMK||(Positive: 1; Negative: 10)|Q8TDC3-2|0.9|0.5
+TK||(Positive: 13; Negative: 27)|O60674|0.886|0.811
+TK||(Positive: 4; Negative: 30)|P23458|0.958|0.793
+TK||(Positive: 3; Negative: 16)|P29597|0.917|0.589
+TK||(Positive: 4; Negative: 22)|P52333|0.898|0.501
+||(Positive: 8; Negative: 17)|P67870|1.0|1.0
+||(Positive: 2; Negative: 10)|P21675|1.0|1.0
+||(Positive: 1; Negative: 17)|Q16654|1.0|1.0
+||(Positive: 1; Negative: 10)|Q9P2K8|0.8|0.333
+||(Positive: 1; Negative: 7)|Q9UGJ0|0.571|0.25
+||(Positive: 1; Negative: 6)|P98161|0.833|0.5
+||(Positive: 2; Negative: 13)|Q15118|0.769|0.625
+||(Positive: 1; Negative: 11)|P14635|0.727|0.25
+||(Positive: 2; Negative: 22)|P15531|0.705|0.567
+||(Positive: 2; Negative: 12)|Q9Y478|0.792|0.643
+||(Positive: 1; Negative: 10)|Q9Y2I7|0.9|0.5
+||(Positive: 1; Negative: 9)|P00558|1.0|1.0
+||(Positive: 1; Negative: 6)|P46020|0.667|0.333
+||(Positive: 1; Negative: 12)|P11274|0.167|0.091
+||(Positive: 1; Negative: 10)|Q15119|1.0|1.0
+||(Positive: 1; Negative: 7)|P14618|0.714|0.333
+********* Averaged by kinases **********
+AGC|Akt|(Positive: 84; Negative: 494)|P31749|0.87|0.68
+AGC|Akt|(Positive: 23; Negative: 179)|P31751|0.933|0.759
+AGC|Akt|(Positive: 6; Negative: 89)|Q9Y243|0.974|0.793
+AGC|DMPK|(Positive: 8; Negative: 26)|O75116|0.702|0.476
+AGC|DMPK|(Positive: 13; Negative: 38)|Q13464|0.964|0.805
+AGC|GRK|(Positive: 18; Negative: 39)|P25098|0.886|0.762
+AGC|GRK|(Positive: 7; Negative: 18)|P34947|0.921|0.877
+AGC|NDR|(Positive: 5; Negative: 19)|O95835|0.884|0.714
+AGC|NDR|(Positive: 5; Negative: 13)|Q9NRM7|0.677|0.512
+AGC|PDK1|(Positive: 6; Negative: 24)|O15530|0.778|0.429
+AGC|PKA|(Positive: 157; Negative: 237)|P17612|0.904|0.877
+AGC|PKC|(Positive: 10; Negative: 27)|P05129|0.974|0.929
+AGC|PKC|(Positive: 26; Negative: 47)|P05771|0.849|0.669
+AGC|PKC|(Positive: 123; Negative: 182)|P17252|0.879|0.841
+AGC|PKC|(Positive: 10; Negative: 23)|P41743|0.948|0.892
+AGC|PKC|(Positive: 18; Negative: 31)|Q02156|0.88|0.76
+AGC|PKC|(Positive: 11; Negative: 20)|Q04759|0.764|0.595
+AGC|PKC|(Positive: 23; Negative: 39)|Q05513|0.916|0.889
+AGC|PKC|(Positive: 39; Negative: 65)|Q05655|0.896|0.843
+AGC|PKG|(Positive: 8; Negative: 15)|Q13237|0.958|0.929
+AGC|PKG|(Positive: 15; Negative: 26)|Q13976|0.987|0.976
+AGC|PKN|(Positive: 7; Negative: 26)|Q16512|0.912|0.716
+AGC|RSK|(Positive: 13; Negative: 21)|P23443|0.839|0.792
+AGC|SGK|(Positive: 14; Negative: 33)|O00141|0.937|0.915
+Atypical|Alpha|(Positive: 11; Negative: 15)|Q96QT4|0.982|0.978
+Atypical|PIKK|(Positive: 31; Negative: 65)|P42345|0.799|0.697
+Atypical|PIKK|(Positive: 29; Negative: 44)|P78527|0.978|0.966
+Atypical|PIKK|(Positive: 69; Negative: 305)|Q13315|0.898|0.755
+Atypical|PIKK|(Positive: 28; Negative: 132)|Q13535|0.956|0.72
+CAMK|CAMK1|(Positive: 5; Negative: 13)|Q14012|0.785|0.68
+CAMK|CAMK2|(Positive: 6; Negative: 30)|Q13554|0.628|0.479
+CAMK|CAMK2|(Positive: 6; Negative: 27)|Q13555|0.704|0.353
+CAMK|CAMK2|(Positive: 7; Negative: 24)|Q13557|0.833|0.716
+CAMK|CAMK2|(Positive: 42; Negative: 85)|Q9UQM7|0.785|0.669
+CAMK|CAMKL|(Positive: 40; Negative: 60)|O14757|0.884|0.813
+CAMK|CAMKL|(Positive: 14; Negative: 30)|P54646|0.936|0.855
+CAMK|CAMKL|(Positive: 5; Negative: 14)|P57059|1.0|1.0
+CAMK|CAMKL|(Positive: 41; Negative: 66)|Q13131|0.88|0.834
+CAMK|CAMKL|(Positive: 5; Negative: 18)|Q14680|0.933|0.86
+CAMK|CAMKL|(Positive: 9; Negative: 21)|Q15831|0.884|0.691
+CAMK|CAMKL|(Positive: 6; Negative: 28)|Q7KZI7|0.851|0.743
+CAMK|CAMKL|(Positive: 5; Negative: 16)|Q9P0L2|0.788|0.572
+CAMK|DAPK|(Positive: 7; Negative: 19)|P53355|0.955|0.912
+CAMK|MAPKAPK|(Positive: 20; Negative: 47)|P49137|0.934|0.853
+CAMK|PIM|(Positive: 14; Negative: 43)|P11309|0.786|0.689
+CAMK|PIM|(Positive: 6; Negative: 20)|Q9P1W9|0.967|0.911
+CAMK|PKD|(Positive: 19; Negative: 45)|Q15139|0.745|0.55
+CAMK|RAD53|(Positive: 17; Negative: 38)|O96017|0.865|0.73
+CK1|CK1-A|(Positive: 31; Negative: 45)|P48729|0.967|0.958
+CK1|CK1-D|(Positive: 20; Negative: 32)|P48730|0.928|0.874
+CK1|CK1-D|(Positive: 14; Negative: 37)|P49674|0.834|0.597
+CMGC|CDK|(Positive: 151; Negative: 306)|P06493|0.944|0.915
+CMGC|CDK|(Positive: 17; Negative: 44)|P11802|0.984|0.962
+CMGC|CDK|(Positive: 96; Negative: 191)|P24941|0.935|0.917
+CMGC|CDK|(Positive: 13; Negative: 29)|P50613|0.96|0.934
+CMGC|CDK|(Positive: 12; Negative: 33)|P50750|0.899|0.819
+CMGC|CDK|(Positive: 9; Negative: 36)|Q00534|0.929|0.874
+CMGC|CDK|(Positive: 49; Negative: 91)|Q00535|0.924|0.884
+CMGC|CDKL|(Positive: 5; Negative: 18)|O76039|0.644|0.488
+CMGC|CK2|(Positive: 18; Negative: 34)|P19784|0.943|0.906
+CMGC|CK2|(Positive: 138; Negative: 187)|P68400|0.949|0.927
+CMGC|DYRK|(Positive: 15; Negative: 33)|Q13627|0.899|0.863
+CMGC|DYRK|(Positive: 10; Negative: 26)|Q92630|0.808|0.664
+CMGC|DYRK|(Positive: 12; Negative: 33)|Q9H2X6|0.985|0.951
+CMGC|GSK|(Positive: 20; Negative: 47)|P49840|0.898|0.824
+CMGC|GSK|(Positive: 101; Negative: 172)|P49841|0.827|0.769
+CMGC|MAPK|(Positive: 10; Negative: 24)|O15264|0.804|0.672
+CMGC|MAPK|(Positive: 101; Negative: 146)|P27361|0.935|0.889
+CMGC|MAPK|(Positive: 148; Negative: 205)|P28482|0.946|0.921
+CMGC|MAPK|(Positive: 44; Negative: 75)|P45983|0.922|0.896
+CMGC|MAPK|(Positive: 22; Negative: 43)|P45984|0.976|0.959
+CMGC|MAPK|(Positive: 11; Negative: 24)|P53778|0.833|0.744
+CMGC|MAPK|(Positive: 11; Negative: 28)|P53779|0.873|0.764
+CMGC|MAPK|(Positive: 8; Negative: 16)|Q13164|1.0|1.0
+CMGC|MAPK|(Positive: 11; Negative: 19)|Q15759|0.914|0.923
+CMGC|MAPK|(Positive: 58; Negative: 85)|Q16539|0.933|0.906
+Other|Aur|(Positive: 27; Negative: 50)|O14965|0.918|0.869
+Other|Aur|(Positive: 39; Negative: 58)|Q96GD4|0.962|0.933
+Other|BUB|(Positive: 5; Negative: 26)|O43683|0.754|0.414
+Other|CDC7|(Positive: 10; Negative: 29)|O00311|0.876|0.78
+Other|IKK|(Positive: 23; Negative: 30)|O14920|0.884|0.857
+Other|IKK|(Positive: 10; Negative: 24)|O15111|0.879|0.814
+Other|IKK|(Positive: 12; Negative: 26)|Q14164|0.859|0.781
+Other|IKK|(Positive: 17; Negative: 37)|Q9UHD2|0.742|0.653
+Other|NEK|(Positive: 8; Negative: 24)|P51955|0.812|0.724
+Other|NEK|(Positive: 5; Negative: 15)|Q9HC98|0.907|0.66
+Other|PLK|(Positive: 9; Negative: 24)|O00444|0.736|0.479
+Other|PLK|(Positive: 65; Negative: 131)|P53350|0.842|0.736
+Other|PLK|(Positive: 6; Negative: 20)|Q9H4B4|0.983|0.948
+Other|PLK|(Positive: 5; Negative: 24)|Q9NYY3|0.992|0.967
+Other|TTK|(Positive: 13; Negative: 31)|P33981|0.873|0.803
+Other|ULK|(Positive: 16; Negative: 34)|O75385|0.754|0.538
+STE|STE11|(Positive: 6; Negative: 23)|Q99683|0.971|0.917
+STE|STE20|(Positive: 5; Negative: 19)|O96013|0.842|0.639
+STE|STE20|(Positive: 8; Negative: 22)|Q13043|0.892|0.805
+STE|STE20|(Positive: 20; Negative: 57)|Q13153|0.858|0.754
+STE|STE20|(Positive: 12; Negative: 37)|Q13177|0.896|0.81
+STE|STE20|(Positive: 6; Negative: 35)|Q13188|0.919|0.711
+STE|STE7|(Positive: 5; Negative: 15)|P45985|0.88|0.628
+STE|STE7|(Positive: 5; Negative: 16)|Q02750|0.775|0.626
+TK|Abl|(Positive: 49; Negative: 363)|P00519|0.961|0.801
+TK|Abl|(Positive: 6; Negative: 23)|P42684|0.906|0.681
+TK|Csk|(Positive: 5; Negative: 28)|P41240|0.664|0.232
+TK|EGFR|(Positive: 22; Negative: 106)|P00533|0.861|0.598
+TK|FAK|(Positive: 8; Negative: 32)|Q05397|0.848|0.569
+TK|FGFR|(Positive: 8; Negative: 24)|P11362|0.839|0.58
+TK|Fer|(Positive: 5; Negative: 22)|P16591|0.936|0.73
+TK|InsR|(Positive: 10; Negative: 31)|P06213|0.935|0.841
+TK|InsR|(Positive: 7; Negative: 18)|P08069|0.968|0.937
+TK|Met|(Positive: 5; Negative: 29)|P08581|0.959|0.891
+TK|PDGFR|(Positive: 8; Negative: 26)|P09619|0.981|0.942
+TK|PDGFR|(Positive: 5; Negative: 27)|P36888|0.881|0.657
+TK|Ret|(Positive: 8; Negative: 35)|P07949|0.889|0.659
+TK|Src|(Positive: 25; Negative: 63)|P06239|0.95|0.897
+TK|Src|(Positive: 34; Negative: 62)|P06241|0.906|0.825
+TK|Src|(Positive: 24; Negative: 67)|P07948|0.935|0.862
+TK|Src|(Positive: 9; Negative: 30)|P08631|0.941|0.772
+TK|Src|(Positive: 127; Negative: 174)|P12931|0.91|0.852
+TK|Src|(Positive: 9; Negative: 25)|Q13882|0.947|0.908
+TK|Syk|(Positive: 10; Negative: 30)|P43403|0.967|0.91
+TK|Syk|(Positive: 20; Negative: 31)|P43405|0.84|0.806
+TK|Tec|(Positive: 5; Negative: 20)|Q06187|0.86|0.618
+TKL|IRAK|(Positive: 7; Negative: 17)|Q9NWZ3|0.975|0.948
+TKL|LRRK|(Positive: 18; Negative: 39)|Q5S007|0.905|0.771
+TKL|MLK|(Positive: 7; Negative: 25)|O43318|0.926|0.824
+AGC||(Positive: 7; Negative: 16)|O75582|0.92|0.86
+AGC||(Positive: 10; Negative: 23)|P05771-2|0.909|0.867
+AGC||(Positive: 16; Negative: 36)|P51812|0.948|0.893
+AGC||(Positive: 21; Negative: 39)|Q15418|0.957|0.913
+TK||(Positive: 13; Negative: 27)|O60674|0.886|0.811
+||(Positive: 8; Negative: 17)|P67870|1.0|1.0
+||NA|Q5VT25,Q9Y5S2,P32298,P35626,P43250,Q15835,Q15208,Q9Y2H1,P22612,P22694,P24723,Q9UBS0,Q96BR1,Q9HBY8,O00418,Q8IXL6,P42336,P48736,Q96Q15,Q16566,O60285,P27448,Q8IWQ3,Q8TDC3,Q96RG2,Q9H0K1,O14936,O43293,Q16644,Q8IW41,Q9BUB5,Q9HBH9,Q15746,Q16816,Q86V86,O94806,Q9BZL6,P78368,Q9HCP0,Q5TCY1,Q6IQ55,Q86Y07,Q99986,O94921,P49336,Q00526,Q14004,Q9BWU1,Q9NYV4,P49759,P49760,Q86Z02,Q9Y463,Q16659,Q8TD08,Q9UBE8,Q96SB4,Q9UQB9,Q8N5S9,Q96RR4,Q8TAS1,O75716,Q8TD19,Q8TDX7,Q96PY6,Q9BXM7,P19525,Q9NZJ5,Q9UKI8,Q96KB5,Q6PHR2,Q8IYT8,P30291,Q96J92,Q9H4A3,P41279,Q99558,O95382,Q13233,Q99759,Q9Y2U5,O00506,O75914,O95747,O95819,Q7L7X3,Q8IVH8,Q8N4C8,Q8NEV4,Q92918,Q9H2G2,Q9NQU5,Q9P286,Q9P289,Q9UEW8,Q9UL54,Q9Y6E0,O14733,P36507,P46734,P52564,Q9UM73,Q07912,P30530,Q12866,P42679,Q08345,P04626,Q15303,P29317,P29320,P29323,P54762,P54764,Q14289,P21802,P22455,P22607,P07332,Q04912,P07333,P10721,P16234,P07947,P09769,P42685,P51451,P42680,P42681,P51813,Q08881,Q02763,P04629,Q16620,P17948,P35916,P35968,P51617,Q38SD2,Q02779,Q16584,Q9NYL2,P04049,P10398,P15056,O43353,Q13546,Q9Y572,O00238,P36896,P36897,P37173,O75676,Q13976-2,Q15349,P11309-2,Q8TDC3-2,P23458,P29597,P52333,P21675,Q16654,Q9P2K8,Q9UGJ0,P98161,Q15118,P14635,P15531,Q9Y478,Q9Y2I7,P00558,P46020,P11274,Q15119,P14618|0.8346285714285719|0.6233485714285714
+********* Averaged by kinase families **********
+AGC|Akt|(Positive: 113; Negative: 762)|3|P31749,P31751,Q9Y243|0.89|0.686
+AGC|DMPK|(Positive: 24; Negative: 112)|6|O75116,Q13464,Q5VT25,Q9Y5S2,O14578,Q09013|0.906|0.576
+AGC|GRK|(Positive: 36; Negative: 116)|7|P25098,P35626,Q15835,P34947,P32298,P43250,Q8WTQ7|0.862|0.728
+AGC|NDR|(Positive: 14; Negative: 59)|4|O95835,Q9NRM7,Q9Y2H1,Q15208|0.759|0.471
+AGC|PDK1|(Positive: 6; Negative: 24)|1|O15530|0.778|0.429
+AGC|PKA|(Positive: 162; Negative: 263)|4|P17612,P22694,P22612,P51817|0.9|0.869
+AGC|PKC|(Positive: 264; Negative: 446)|9|P17252,P24723,Q05655,Q02156,Q05513,P41743,P05771,Q04759,P05129|0.886|0.799
+AGC|PKG|(Positive: 23; Negative: 41)|2|Q13237,Q13976|0.949|0.926
+AGC|PKN|(Positive: 7; Negative: 47)|3|Q16512,Q16513,Q6P5Z2|0.936|0.681
+AGC|RSK|(Positive: 15; Negative: 31)|2|P23443,Q9UBS0|0.841|0.745
+AGC|SGK|(Positive: 16; Negative: 52)|3|O00141,Q9HBY8,Q96BR1|0.898|0.819
+Atypical|Alpha|(Positive: 14; Negative: 53)|5|Q96QT4,O00418,Q9BX84,Q96L96,Q96QP1|0.931|0.883
+Atypical|PIKK|(Positive: 160; Negative: 611)|10|P78527,Q13315,Q13535,P42345,P48736,Q96Q15,P42336,O00443,P42338,O00329|0.918|0.786
+CAMK|CAMK1|(Positive: 8; Negative: 55)|4|Q14012,Q16566,Q96NX5,Q6P2M8|0.823|0.439
+CAMK|CAMK2|(Positive: 61; Negative: 166)|4|Q13554,Q9UQM7,Q13555,Q13557|0.763|0.578
+CAMK|CAMKL|(Positive: 137; Negative: 391)|19|Q8TDC3,Q15831,O14757,Q96RG2,Q13131,Q9P0L2,P54646,Q9H0K1,Q7KZI7,Q14680,P57059,Q8IWQ3,O60285,P27448,Q9H093,Q9Y2K2,Q96L34,Q8IY84,P57058|0.897|0.759
+CAMK|DAPK|(Positive: 11; Negative: 67)|5|P53355,O43293,O94768,Q9UEE5,Q9UIK4|0.847|0.705
+CAMK|MAPKAPK|(Positive: 27; Negative: 92)|5|P49137,Q8IW41,Q9BUB5,Q9HBH9,Q16644|0.882|0.664
+CAMK|PIM|(Positive: 22; Negative: 77)|3|P11309,Q86V86,Q9P1W9|0.866|0.764
+CAMK|PKD|(Positive: 25; Negative: 80)|3|Q15139,O94806,Q9BZL6|0.772|0.572
+CAMK|RAD53|(Positive: 17; Negative: 38)|1|O96017|0.865|0.73
+CK1|CK1-A|(Positive: 31; Negative: 61)|2|P48729,Q8N752|0.971|0.952
+CK1|CK1-D|(Positive: 34; Negative: 69)|2|P48730,P49674|0.893|0.799
+CK1|VRK|(Positive: 5; Negative: 32)|3|Q86Y07,Q99986,Q8IV63|0.938|0.867
+CMGC|CDK|(Positive: 361; Negative: 926)|21|P06493,P24941,P50750,O94921,Q00534,P11802,Q00526,Q00535,P50613,Q14004,P49336,Q9BWU1,Q9NYV4,Q8IZL9,Q15131,Q07002,Q00537,Q96Q40,Q00536,Q9UQ88,P21127|0.935|0.89
+CMGC|CDKL|(Positive: 5; Negative: 28)|2|O76039,Q92772|0.65|0.438
+CMGC|CK2|(Positive: 156; Negative: 221)|2|P68400,P19784|0.948|0.923
+CMGC|DYRK|(Positive: 41; Negative: 141)|9|Q9H2X6,Q13627,Q92630,Q9Y463,Q86Z02,O43781,Q13523,Q9H422,Q9NR20|0.892|0.725
+CMGC|GSK|(Positive: 121; Negative: 219)|2|P49840,P49841|0.837|0.774
+CMGC|MAPK|(Positive: 431; Negative: 707)|14|Q15759,P27361,P45983,Q16539,P28482,P45984,O15264,P53778,Q13164,P53779,Q9UBE8,Q16659,Q8TD08,P31152|0.932|0.886
+Other|Aur|(Positive: 67; Negative: 120)|3|O14965,Q96GD4,Q9UQB9|0.945|0.903
+Other|BUB|(Positive: 5; Negative: 26)|1|O43683|0.754|0.414
+Other|CDC7|(Positive: 10; Negative: 29)|1|O00311|0.876|0.78
+Other|IKK|(Positive: 62; Negative: 117)|4|Q14164,O14920,O15111,Q9UHD2|0.844|0.766
+Other|NEK|(Positive: 17; Negative: 106)|9|Q8TDX7,P51955,Q96PY6,Q8TD19,Q9HC98,Q86SG6,P51956,Q8NG66,Q6P3R8|0.916|0.598
+Other|PEK|(Positive: 5; Negative: 37)|3|P19525,Q9NZJ5,Q9BQI3|1.0|1.0
+Other|PLK|(Positive: 85; Negative: 199)|4|P53350,Q9NYY3,O00444,Q9H4B4|0.861|0.741
+Other|TTK|(Positive: 13; Negative: 31)|1|P33981|0.873|0.803
+Other|ULK|(Positive: 18; Negative: 52)|3|Q8IYT8,O75385,Q6PHR2|0.792|0.516
+STE|STE11|(Positive: 11; Negative: 78)|6|Q13233,Q99683,O95382,Q9Y2U5,Q99759,Q9Y6R4|0.893|0.624
+STE|STE20|(Positive: 78; Negative: 402)|26|Q13043,Q13153,Q9UEW8,Q7L7X3,Q9NQU5,O95747,Q9Y6E0,O95819,Q13177,Q13188,Q9H2G2,O96013,Q9P286,O75914,Q92918,Q9UL54,Q8IVH8,O00506,Q9P289,Q8N4C8,Q8NEV4,Q7Z2Y5,O94804,Q9UKE5,Q12851,Q9Y4K4|0.837|0.563
+STE|STE7|(Positive: 15; Negative: 104)|7|Q02750,O14733,P45985,P52564,P36507,P46734,Q13163|0.868|0.445
+TK|Abl|(Positive: 55; Negative: 386)|2|P00519,P42684|0.957|0.789
+TK|Csk|(Positive: 6; Negative: 37)|2|P41240,P42679|0.73|0.246
+TK|EGFR|(Positive: 26; Negative: 145)|3|P04626,P00533,Q15303|0.866|0.536
+TK|Eph|(Positive: 6; Negative: 164)|12|P54764,P54762,P29317,P29320,P29323,P21709,Q15375,P29322,P54753,P54760,P54756,Q9UF33|0.942|0.426
+TK|FAK|(Positive: 12; Negative: 53)|2|Q05397,Q14289|0.821|0.488
+TK|FGFR|(Positive: 12; Negative: 64)|4|P21802,P11362,P22455,P22607|0.85|0.431
+TK|Fer|(Positive: 6; Negative: 35)|2|P16591,P07332|0.914|0.526
+TK|InsR|(Positive: 17; Negative: 49)|2|P08069,P06213|0.947|0.878
+TK|Met|(Positive: 7; Negative: 43)|2|Q04912,P08581|0.973|0.924
+TK|PDGFR|(Positive: 19; Negative: 98)|5|P09619,P36888,P10721,P16234,P07333|0.934|0.716
+TK|Ret|(Positive: 8; Negative: 35)|1|P07949|0.889|0.659
+TK|Src|(Positive: 240; Negative: 524)|11|P07948,P07947,P08631,Q13882,P12931,P06241,P06239,P51451,P09769,P42685,Q9H3Y6|0.924|0.83
+TK|Syk|(Positive: 30; Negative: 61)|2|P43405,P43403|0.901|0.827
+TK|Tec|(Positive: 17; Negative: 102)|5|P51813,P42680,Q06187,P42681,Q08881|0.862|0.507
+TK|Trk|(Positive: 8; Negative: 35)|3|Q16620,P04629,Q16288|0.946|0.804
+TK|VEGFR|(Positive: 5; Negative: 36)|3|P35916,P35968,P17948|0.772|0.342
+TKL|IRAK|(Positive: 11; Negative: 32)|2|P51617,Q9NWZ3|0.943|0.762
+TKL|LRRK|(Positive: 22; Negative: 54)|2|Q38SD2,Q5S007|0.927|0.78
+TKL|MLK|(Positive: 13; Negative: 105)|9|O43318,Q16584,Q9NYL2,Q02779,O43283,Q12852,Q13418,P80192,Q5TCX8|0.919|0.714
+TKL|RAF|(Positive: 7; Negative: 86)|5|P10398,P15056,P04049,Q6VAB6,Q8IVT5|0.699|0.163
+TKL|STKR|(Positive: 9; Negative: 803)|9|P37173,P36896,P36897,O00238,Q13705,P37023,P36894,Q8NER5,Q04771|0.989|0.452
+||NA|FAM20,CASK,MLCK,PHK,CK1-G,TTBK,CLK,SRPK,CAMKK,KIS,NAK,NKF2,TLK,TOPK,WEE,WNK,COT,NIK,ALK,Ack,Axl,DDR,Tie,RIPK|Q8IXL6,O14936,Q15746,Q8WZ42,Q9H1R3,Q32MK0,Q16816,P15735,P78368,Q9HCP0,Q9Y6M4,Q5TCY1,Q6IQ55,P49760,P49759,Q9HAZ1,P49761,Q96SB4,P78362,Q96RR4,Q8N5S9,Q8TAS1,O75716,Q2M2I8,Q9NSY1,O14976,Q9BXM7,Q9UKI8,Q86UE8,Q96KB5,P30291,Q99640,Q9H4A3,Q96J92,Q9BYP7,Q9Y3S1,P41279,Q99558,Q9UM73,P29376,Q07912,Q13470,Q12866,P30530,Q06418,Q08345,Q16832,Q02763,Q13546,Q9Y572,O43353|0.8166666666666668|0.4835416666666666

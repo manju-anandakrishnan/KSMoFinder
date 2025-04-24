@@ -58,6 +58,6 @@ To evaluate at the kinase-substrate level without motif information, use the hig
     Testing dataset1 is available under '/data/classifier/td1_ratio_1.1' <br>
     Testing dataset2 is available under '/data/classifier/td2_tr_dist' <br>
     (or) <br>
-2. Download directly from Zenodo repository, https://zenodo.org/records/14713589/files/classifier_datasets.zip
+2. Download directly from Zenodo repository, https://zenodo.org/records/15271711/files/classifier_datasets.zip
 
 
