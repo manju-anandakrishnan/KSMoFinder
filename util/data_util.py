@@ -96,7 +96,7 @@ def _get_substrate_motifs_by_type(substrate_motifs):
             st_substrate_motifs.append(sm)
     return tyr_substrate_motifs, st_substrate_motifs, substrate_motifs
 
-def _get_valid_ksm_combinations(kinases, substrate_motifs):
+def get_valid_ksm_combinations(kinases, substrate_motifs):
     
     tyr_kinases, st_kinases, other_kinases = _get_kinases_by_type()
     tyr_substrate_motifs, st_substrate_motifs, substrate_motifs = _get_substrate_motifs_by_type(substrate_motifs)

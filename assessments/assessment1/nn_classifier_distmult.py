@@ -138,7 +138,7 @@ class KSFinder2:
                 except ValueError as ve:
                     print(ve.with_traceback())
                 
-            max_score = np.median(model_fold_scores)
+            max_score = np.max(model_fold_scores)
             param_comb['epoch'] = model_fold_epochs[model_fold_scores.index(max_score)]
             results.append({'params': param_comb, 'max_score':max_score})
 

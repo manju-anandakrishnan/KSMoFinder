@@ -23,16 +23,10 @@ processed_cnt = 0
 kinases = data_util.get_kg_kinases()
 substrate_motifs = data_util.get_kg_substrate_motifs()
 
-# data_util._get_valid_ksm_combinations(kinases, substrate_motifs)
-
-# df_l_kinases, df_l_substrate_motifs = zip(*product(kinases, substrate_motifs))
-# total_cnt = len(df_l_kinases)
-
-# print('Total records to process::',len(df_l_kinases),len(df_l_substrate_motifs))
 
 print(f'Total kinase count {len(kinases)}')
 processed_kinase_cnt = 0
-for df_l_kinases, df_l_substrate_motifs in data_util._get_valid_ksm_combinations(kinases,substrate_motifs):
+for df_l_kinases, df_l_substrate_motifs in data_util.get_valid_ksm_combinations(kinases,substrate_motifs):
     processed_kinase_cnt += 1
     for i, batch_pred_df in batch_process_pred(df_l_kinases, df_l_substrate_motifs):
         batch_pred_df.dropna(axis=0,how='any',inplace=True)
