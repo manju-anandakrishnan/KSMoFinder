@@ -16,7 +16,7 @@ To install this version, execute, conda install pytorch==1.12.1 torchvision==0.1
 
 4. Initialize the repository <br>
 sh init.sh <br>
-Dataset and trained models are available in Zenodo repository, https://doi.org/10.5281/zenodo.14713589. Upon initialization, the models and dataset should be downloaded into appropriate folders in KSMoFinder repository.
+Dataset and trained models are available in the Zenodo repository, https://doi.org/10.5281/zenodo.15730847. Upon initialization, the models and dataset should be downloaded into appropriate folders in KSMoFinder repository.
 
 *Steps to set up KSMoFinder --- ends ---*
 
@@ -58,6 +58,6 @@ To evaluate at the kinase-substrate level without motif information, use the hig
     Testing dataset1 is available under '/data/classifier/td1_ratio_1.1' <br>
     Testing dataset2 is available under '/data/classifier/td2_tr_dist' <br>
     (or) <br>
-2. Download directly from Zenodo repository, https://zenodo.org/records/15271711/files/classifier_datasets.zip
+2. Download directly from Zenodo repository, https://zenodo.org/records/15730847/files/classifier_datasets.zip
 
 
